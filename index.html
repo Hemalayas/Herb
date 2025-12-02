@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Herb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              munch: {
+                green: '#00D084',
+                light: '#E8F5E9',
+                dark: '#2C2C2C',
+                med: '#6B6B6B',
+                gray: '#E0E0E0'
+              }
+            },
+            boxShadow: {
+              'glow': '0 0 30px -5px rgba(0, 208, 132, 0.6)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #f3f4f6; -webkit-tap-highlight-color: transparent; }
+      /* Hide scrollbar for mobile-like feel */
+      ::-webkit-scrollbar { width: 0px; background: transparent; }
+      
+      /* Dark mode body bg */
+      .dark body { background-color: #111827; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
